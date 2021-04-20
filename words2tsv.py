@@ -1,12 +1,12 @@
 from foma import FST
 import csv
 from random import randint
-fst = FST.load('grammars/kunwok.fsm')
-autocomplete = FST.load('grammars/autocomplete.fsm')
+#fst = FST.load('grammars/kunwok.fsm')
+autocomplete = FST.load('grammars/crk-infl-morpheme-completion.hfst')
 
 
-WORDS = 'data/words/actual-words-gup.txt'
-TSV_OUT = 'data/tsv/real-words.tsv'
+WORDS = 'data/words/cree-wordlist.txt'
+TSV_OUT = 'data/tsv/cree-wordlist.tsv'
 
 def main():
     lexicon = load_vocab(WORDS)
