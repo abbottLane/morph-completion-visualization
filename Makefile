@@ -6,3 +6,7 @@ install:
 cree-tsv: install
 	. venv/bin/activate; 
 	python words2tsv-hfst.py
+
+viz: install
+	. venv/bin/activate; 
+	python visualize_morph_data.py

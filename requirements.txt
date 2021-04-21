@@ -1,2 +1,5 @@
 future
 hfst
+seaborn
+pandas
+matplotlib
