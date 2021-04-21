@@ -52,6 +52,8 @@ def get_prefix_dict(lexicon):
     for k,v in prefix_dict.items():
         deduped[k] = list(set(v))
 
+    for k,v in deduped.items():
+        print("Key: " + str(k) + "\t" + "Value_len: " + str(len(v))) # so we can see shape of computational load
     return deduped
 
 
