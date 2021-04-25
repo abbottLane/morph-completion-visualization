@@ -14,7 +14,7 @@ def main():
     
     with open(OUTDIR, "w") as g:
         for l in lines:
-            l = re.sub("-", "", l)
+            # l = re.sub("-", "", l)
             g.write(l.lower() + "\n")
 
 
