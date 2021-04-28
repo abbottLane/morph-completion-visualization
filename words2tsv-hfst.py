@@ -8,7 +8,7 @@ import multiprocessing as mp
 # hfst_process = hfst.HfstInputStream('grammars/crk-infl-morpheme-completion.hfstol')
 # my_hfst = hfst_process.read()
 
-MODEL = "grammars/crk-infl-morpheme-completion.hfstol"
+MODEL = "grammars/crk-infl-morpheme-completion.old.hfstol"
 WORDS = '/home/wlane/projects/morph-completion-visualization/data/words/cree_wordlist.txt'
 TSV_OUT = '/home/wlane/projects/morph-completion-visualization/data/tsv/cree-wordlist.tsv'
 

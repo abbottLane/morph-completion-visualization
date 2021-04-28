@@ -10,3 +10,7 @@ cree-tsv: install
 viz: install
 	. venv/bin/activate; 
 	python visualize_morph_data.py
+
+explore:
+	. venv/bin/activate;
+	python explore_query.py
