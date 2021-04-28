@@ -12,13 +12,11 @@ def load_tsv(filepath):
     return pd.read_csv(filepath,index_col=None,sep='\t')
 
 def build_uniqueness_plot(name, data):
-    cmap = sns.cubehelix_palette(dark=.3, light=.8, as_cmap=True)
-
     print(data.head())
     print("space")
     print(data.min())
-    #ax = sns.catplot(x="x", y="y", jitter=True,data=data)
-    g = sns.catplot(x="x", y="y", kind="boxen", palette="Blues", k_depth="full",
+    pal = sns.color_palette("flare")
+    g = sns.catplot(x="x", y="y", kind="boxen", palette=pal, k_depth="trustworthy",
             data=data)
     ax = plt.axhline(100, ls='--', color='g', label="100")
     ax = plt.axhline(50, ls='--', color='r')
